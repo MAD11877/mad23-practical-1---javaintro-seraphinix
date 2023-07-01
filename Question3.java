@@ -9,8 +9,20 @@ public class Question3
      * 
      * Hint: in.nextInt() to read integer
      */
-     
+
     Scanner in = new Scanner(System.in);
-    
+
+    System.out.print("Enter an integer: ");
+    int number = in.nextInt();
+
+    int result = multiplyByItself(number);
+
+    System.out.println("Result: " + result);
+
+    in.close();
+  }
+
+  public static int multiplyByItself(int number) {
+    return number * number;
   }
 }
